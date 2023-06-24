@@ -20,7 +20,7 @@ function LoginPage() {
           />
           <button className='btn-login mx-auto mt-4'>تسجيل الدخول</button>
           <label className='mx-auto my-4'>
-            ليس لديك حساب ؟{' '}
+            ليس لديك حساب ؟
             <Link to='/register' style={{ textDecoration: 'none' }}>
               <span style={{ cursor: 'pointer' }} className='text-danger'>
                 اضغط هنا
@@ -30,16 +30,12 @@ function LoginPage() {
         </Col>
 
         <label className='mx-auto my-4'>
-          <Link to='/admin/allproducts' style={{ textDecoration: 'none' }}>
-            <span style={{ cursor: 'pointer' }} className='text-danger'>
-              الدخول ادمن
-            </span>
+          <Link to='/admin/allproducts'>
+            <button className='btn btn-danger'>ادمن</button>
           </Link>
 
-          <Link to='/user/allorders' style={{ textDecoration: 'none' }}>
-            <span style={{ cursor: 'pointer' }} className='text-danger mx-3'>
-              الدخول مستخدم
-            </span>
+          <Link to='/user/allorders'>
+            <button className='btn btn-danger mx-4'>مستخدم</button>
           </Link>
         </label>
       </Row>
