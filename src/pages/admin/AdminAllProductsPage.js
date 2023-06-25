@@ -14,7 +14,7 @@ function AdminAllProductsPage() {
 
         <Col sm='9' xs='10' md='10'>
           <AdminAllProducts />
-          <Pagination />
+          {/* <Pagination /> */}
         </Col>
       </Row>
     </Container>
