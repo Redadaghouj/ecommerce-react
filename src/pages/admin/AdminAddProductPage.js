@@ -1,10 +1,9 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import AdminSideBar from '../../components/admin/AdminSideBar';
-import AdminAllProducts from '../../components/admin/AdminAllProducts';
-import Pagination from '../../components/utility/Pagination';
+import AdminAddProduct from '../../components/admin/AdminAddProduct';
 
-function AdminAllProductsPage() {
+function AdminAddProductPage() {
   return (
     <Container className='set-height'>
       <Row className='py-3'>
@@ -13,12 +12,11 @@ function AdminAllProductsPage() {
         </Col>
 
         <Col sm='9' xs='10' md='10'>
-          <AdminAllProducts />
-          <Pagination />
+          <AdminAddProduct />
         </Col>
       </Row>
     </Container>
   );
 }
 
-export default AdminAllProductsPage;
+export default AdminAddProductPage;

@@ -9,7 +9,7 @@ function AdminAllProductsCard() {
       <Card
         className='my-2'
         style={{
-          width: '100%',
+          maxWidth: '100%',
           height: '350px',
           borderRadius: '8px',
           border: 'none',
@@ -22,12 +22,15 @@ function AdminAllProductsCard() {
             <div className='d-inline item-delete-edit'>تعديل</div>
           </Col>
         </Row>
-        <Link to='/products/:id' style={{ textDecoration: 'none' }}>
+        <Link
+          to='/products/:id'
+          style={{ textDecoration: 'none', color: '#272727' }}
+        >
           <Card.Img style={{ height: '228px', width: '100%' }} src={prod1} />
           <Card.Body>
             <Card.Title>
               <div className='card-title'>
-                سود كربون ساعة يد ذكية بيب إس أسود كربون{' '}
+                سود كربون ساعة يد ذكية بيب إس أسود كربون
               </div>
             </Card.Title>
             <Card.Text>
