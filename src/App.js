@@ -11,13 +11,13 @@ import ProductDetailsPage from './pages/products/ProductDetailsPage';
 import CartPage from './pages/cart/CartPage';
 import PaymentMethodPage from './pages/checkout/PaymentMethodPage';
 import AdminAllProductsPage from './pages/admin/AdminAllProductsPage';
-import UserAllOrders from './pages/user/UserAllOrders';
 import AdminAllOrdersPage from './pages/admin/AdminAllOrdersPage';
 import AdminOrderDetailsPage from './pages/admin/AdminOrderDetailsPage';
 import AdminAddBrandPage from './pages/admin/AdminAddBrandPage';
 import AdminAddCategoryPage from './pages/admin/AdminAddCategoryPage';
 import AdminAddSubCategoryPage from './pages/admin/AdminAddSubCategoryPage';
 import AdminAddProductPage from './pages/admin/AdminAddProductPage';
+import UserAllOrdersPage from './pages/user/UserAllOrdersPage';
 
 function App() {
   return (
@@ -45,7 +45,7 @@ function App() {
           <Route path='addproduct' element={<AdminAddProductPage />} />
         </Route>
         <Route path='/user' element={<Outlet />}>
-          <Route path='allorders' element={<UserAllOrders />} />
+          <Route path='allorders' element={<UserAllOrdersPage />} />
         </Route>
       </Routes>
       <Footer />
