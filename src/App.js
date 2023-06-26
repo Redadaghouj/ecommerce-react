@@ -18,6 +18,10 @@ import AdminAddCategoryPage from './pages/admin/AdminAddCategoryPage';
 import AdminAddSubCategoryPage from './pages/admin/AdminAddSubCategoryPage';
 import AdminAddProductPage from './pages/admin/AdminAddProductPage';
 import UserAllOrdersPage from './pages/user/UserAllOrdersPage';
+import UserFavoriteProductsPage from './pages/UserFavoriteProductsPage';
+import UserAddressesPage from './pages/user/UserAddressesPage';
+import UserAddAddressPage from './pages/user/UserAddAddressPage';
+import UserEditAddressPage from './pages/user/UserEditAddressPage';
 
 function App() {
   return (
@@ -34,18 +38,25 @@ function App() {
           <Route path='/products/:id' element={<ProductDetailsPage />} />
         </Route>
         <Route path='/cart' element={<CartPage />} />
-        <Route path='/order/paymethoud' element={<PaymentMethodPage />} />
+        <Route path='/order/payment-method' element={<PaymentMethodPage />} />
         <Route path='/admin' element={<Outlet />}>
-          <Route path='allproducts' element={<AdminAllProductsPage />} />
-          <Route path='allorders' element={<AdminAllOrdersPage />} />
+          <Route path='all-products' element={<AdminAllProductsPage />} />
+          <Route path='all-orders' element={<AdminAllOrdersPage />} />
           <Route path='orders/:id' element={<AdminOrderDetailsPage />} />
-          <Route path='addbrand' element={<AdminAddBrandPage />} />
-          <Route path='addcategory' element={<AdminAddCategoryPage />} />
-          <Route path='addsubcategory' element={<AdminAddSubCategoryPage />} />
-          <Route path='addproduct' element={<AdminAddProductPage />} />
+          <Route path='add-brand' element={<AdminAddBrandPage />} />
+          <Route path='add-category' element={<AdminAddCategoryPage />} />
+          <Route path='add-subcategory' element={<AdminAddSubCategoryPage />} />
+          <Route path='add-product' element={<AdminAddProductPage />} />
         </Route>
         <Route path='/user' element={<Outlet />}>
-          <Route path='allorders' element={<UserAllOrdersPage />} />
+          <Route path='all-orders' element={<UserAllOrdersPage />} />
+          <Route
+            path='favorite-products'
+            element={<UserFavoriteProductsPage />}
+          />
+          <Route path='addresses' element={<UserAddressesPage />} />
+          <Route path='add-address' element={<UserAddAddressPage />} />
+          <Route path='edit-address' element={<UserEditAddressPage />} />
         </Route>
       </Routes>
       <Footer />

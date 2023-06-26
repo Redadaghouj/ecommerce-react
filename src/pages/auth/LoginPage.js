@@ -30,11 +30,11 @@ function LoginPage() {
         </Col>
 
         <label className='mx-auto my-4'>
-          <Link to='/admin/allproducts'>
+          <Link to='/admin/all-orders'>
             <button className='btn btn-danger'>ادمن</button>
           </Link>
 
-          <Link to='/user/allorders'>
+          <Link to='/user/all-orders'>
             <button className='btn btn-danger mx-4'>مستخدم</button>
           </Link>
         </label>

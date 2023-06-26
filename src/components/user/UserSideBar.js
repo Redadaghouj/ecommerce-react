@@ -5,12 +5,12 @@ function UserSideBar() {
   return (
     <div className='sidebar'>
       <div className='d-flex flex-column'>
-        <Link to='/user/allorders' style={{ textDecoration: 'none' }}>
+        <Link to='/user/all-orders' style={{ textDecoration: 'none' }}>
           <div className='admin-side-text mt-3 border-bottom p-2 mx-auto text-center'>
             اداره الطلبات
           </div>
         </Link>
-        <Link to='/user/favoriteproducts' style={{ textDecoration: 'none' }}>
+        <Link to='/user/favorite-products' style={{ textDecoration: 'none' }}>
           <div className='admin-side-text my-1 border-bottom p-2 mx-auto text-center'>
             المنتجات المفضلة
           </div>

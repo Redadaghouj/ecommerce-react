@@ -17,7 +17,7 @@ function CartCheckout() {
           34000 جنية
         </div>
         <Link
-          to='/order/paymethoud'
+          to='/order/payment-method'
           style={{ textDecoration: 'none' }}
           className='product-cart-add  d-inline '
         >
